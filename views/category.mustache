@@ -1,0 +1,14 @@
+{{> header}}
+<div id="categorypage">
+<div class="sidebar" data="{{currentcatdb}}">
+<h1>{{currentcat}}</h1>
+</div>
+
+<div class="category">
+<ul>
+  {{#category}}
+    <li><a href="/post/{{id}}"><span>{{titel}}</span><span>{{content}}…</span></a></li>
+  {{/category}}
+  </ul>
+</div>
+</div>

@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.1em;
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#login,
+#signup,
+#newpost {
+  animation: background-fade 30s alternate infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes background-fade {
+  0% {
+    background: #df5555;
+  }
+  20% {
+    background: #ea9062;
+  }
+  40% {
+    background: #f6c85d;
+  }
+  60% {
+    background: #94bd73;
+  }
+  80% {
+    background: #50a98c;
+  }
+  100% {
+    background: #59758e;
+  }
+}
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 17px;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 5% 0;
+}
+
+input {
+  font-style: italic;
+  width: 80%;
+  height: 35px;
+  border: 2px solid black;
+  background: white;
+  padding: 5px;
+}
+
+#submit {
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 1.1em;
+  font-style: normal;
+  margin-top: 5%;
+}
+
+#submit:hover {
+  background: black;
+  color: white;
+}
+
+form div input:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+form div input:last-child {
+  border-radius: 0px 0px 10px 10px;
+  transform: translateY(-2px);
+}
+
+label {
+  padding-top: 1.5em;
+}

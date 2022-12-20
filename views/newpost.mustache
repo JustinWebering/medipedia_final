@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/form.css">
+<link rel="stylesheet" href="https://use.typekit.net/hfb8lhv.css">
+<div id="newpost">
+
+<form action="/create" method="post">
+  <h1>Neuen Beitrag erfassen</h1>
+  <label for="title">Titel</label>
+  <input id="title" name="title" type="text">
+
+  <label for="content">Beitrag</label>
+  <textarea id="content" name="content" cols="35" rows="4"></textarea> 
+  
+  <label for="category">Kategorie</label>
+  <select id="category" name="category">
+    <option value="none" selected disabled hidden>Bitte wählen</option>
+    <option value="photography">Fotographie</option>
+    <option value="layoutandtypography">Layout & Typographie</option>
+    <option value="informatics">Informatik</option>
+    <option value="film">Filmographie</option>
+    <option value="design">Gestaltung</option>
+    <option value="adobe">Adobe</option>
+  </select>
+
+<input id="submit" type="submit">
+</form>
+</div>

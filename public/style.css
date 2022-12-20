@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav {
+  position: absolute;
+  top: 3em;
+}
+
+nav ul li a {
+  margin: 2em;
+}
+
+[data="photography"] {
+  background: #df5555;
+}
+
+[data="layoutandtypography"] {
+  background: #ea9062;
+}
+
+[data="informatics"] {
+  background: #f6c85d;
+}
+
+[data="film"] {
+  background: #94bd73;
+}
+
+[data="design"] {
+  background: #50a98c;
+}
+
+[data="adobe"] {
+  background: #59758e;
+}
+
+#categories {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#categories li {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#categories li a {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#categorypage {
+  display: flex;
+  flex-direction: row;
+}
+
+#categorypage .sidebar {
+  display: flex;
+  justify-content: center;
+  min-width: 250px;
+  width: 28em;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  padding-top: 14vh;
+}
+
+.category,
+.category ul {
+  width: 100%;
+}
+
+.category ul li {
+  width: 80%;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  margin-top: 14vh;
+  margin-left: 4vw;
+}
+
+.category ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  display: flex;
+}
+
+.category ul li a span:first-child {
+  padding: 1vh;
+  display: block;
+  align-items: center;
+  width: 15vw;
+}
+
+.category ul li a span:nth-child(2) {
+  padding: 1vh;
+  padding-left: 2vw;
+  display: flex;
+  align-items: center;
+}
+
+#createpost {
+  width: auto;
+  height: 30px;
+  background: white;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 30px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#post {
+  padding-top: 14vh;
+  padding-left: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#post h1 {
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
